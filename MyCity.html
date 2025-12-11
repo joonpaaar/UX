@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My city</title>
+  <link rel="alternate" hreflang="en" href="MyCity.html">
+  <link rel="alternate" hreflang="es" href="MiCiudad.html">
+  <link rel="stylesheet" href="Estructura.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to main content</a>
+  <header>
+    <h1>MY CITY</h1>
+  </header>
+  <nav aria-label="Main navigation">
+    <a href="index-en.html">HOME</a>
+    <a href="AboutMe.html">ABOUT ME</a>
+    <a href="MyCity.html" aria-current="page">MY CITY</a>
+    <a href="Help.html">HELP</a>
+    <a href="Sitemap.html">SITEMAP</a>
+    <a href="Contact.html">CONTACT</a>
+    <form role="search" action="Search.html" method="get" class="buscador">
+      <label for="q">Search</label>
+      <input id="q" name="q" type="search" required>
+      <button type="submit">Search</button>
+    </form>
+    <span class="idiomas" aria-label="Language selector">
+      <a href="MiCiudad.html" hreflang="es" lang="es">ES</a>
+      <span aria-hidden="true">|</span>
+      <a href="MyCity.html" hreflang="en" lang="en">EN</a>
+    </span>
+  </nav>
+  <main id="content" tabindex="-1">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index-en.html">Home</a></li>
+        <li aria-current="page">My city</li>
+      </ol>
+    </nav>
+    <h2>Discover my city</h2>
+
+    <section class="bloque">
+      <div class="texto">
+        <h3>Bilbao</h3>
+        <p>Bilbao is the largest city in the Basque Country and a key economic and cultural hub in northern Spain. Once known for its industrial character, it is now famous for its urban transformation with icons like the Guggenheim Museum and the Zubizuri bridge.</p>
+        <p>It still preserves its traditional essence in places like the Old Town and Plaza Nueva. Surrounded by mountains and close to the coast, Bilbao blends modernity, tradition and nature.</p>
+      </div>
+      <div class="texto">
+        <h3>Erandio</h3>
+        <p>I live in Erandio, a municipality in Bizkaia, within the metropolitan area of Bilbao. It lies on the Nervión river and combines tradition with a modern environment, well connected to the capital.</p>
+        <p>Its town centre keeps the essence of a Basque village, while its neighbourhoods reflect the proximity to a big city. Here is a short video with things to do when visiting Bilbao.</p>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HKw3UOpPSaY" title="Video about Bilbao" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      &copy; 2025 - My Personal Presentation · Last updated:
+      <time datetime="2025-12-01">December 1, 2025</time>
+      · <a href="https://github.com/" rel="noopener">GitHub</a>
+      · <a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>

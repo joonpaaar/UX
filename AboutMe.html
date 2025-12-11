@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About me</title>
+  <link rel="alternate" hreflang="en" href="AboutMe.html">
+  <link rel="alternate" hreflang="es" href="SobreMi.html">
+  <link rel="stylesheet" href="Estructura.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to main content</a>
+  <header>
+    <h1>ABOUT ME</h1>
+  </header>
+  <nav aria-label="Main navigation">
+    <a href="index-en.html">HOME</a>
+    <a href="AboutMe.html" aria-current="page">ABOUT ME</a>
+    <a href="MyCity.html">MY CITY</a>
+    <a href="Help.html">HELP</a>
+    <a href="Sitemap.html">SITEMAP</a>
+    <a href="Contact.html">CONTACT</a>
+    <form role="search" action="Search.html" method="get" class="buscador">
+      <label for="q">Search</label>
+      <input id="q" name="q" type="search" required>
+      <button type="submit">Search</button>
+    </form>
+    <span class="idiomas" aria-label="Language selector">
+      <a href="SobreMi.html" hreflang="es" lang="es">ES</a>
+      <span aria-hidden="true">|</span>
+      <a href="AboutMe.html" hreflang="en" lang="en">EN</a>
+    </span>
+  </nav>
+  <main id="content" tabindex="-1">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index-en.html">Home</a></li>
+        <li aria-current="page">About me</li>
+      </ol>
+    </nav>
+    <h2>My sports interests</h2>
+
+    <section class="bloque">
+      <h3>FOOTBALL</h3>
+      <div class="contenido-bloque">
+        <div class="imagenes">
+          <figure>
+            <img src="sanmames.jpg" alt="San Mamés stadium" class="foto" loading="lazy" decoding="async">
+          </figure>
+          <figure>
+            <img src="mundial.jpg" alt="World Cup photo" class="foto" loading="lazy" decoding="async">
+          </figure>
+        </div>
+        <div class="texto">
+          <p>Football has always been important to me. I have played in teams and with friends in the street, and I still enjoy it a lot. I like both playing and watching it on TV.</p>
+          <p>Being from Bilbao and a big fan, I support Athletic Club. Experiencing matches in San Mamés is unique. The atmosphere, the supporters and the way football is lived here make it very special.</p>
+          <p>Besides my team, I also follow big competitions like the Champions League or the World Cup. I also enjoy basketball, both watching and playing with friends.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h3>EDUCATION AND EXPERIENCE</h3>
+      <div class="contenido-bloque">
+        <div class="texto">
+          <p><strong>Academic education:</strong></p>
+          <ul>
+            <li>BSc in Computer Engineering - University of Deusto (2020-2024)</li>
+            <li>MSc in Web Engineering - University of Oviedo (2025-present)</li>
+          </ul>
+          <p><strong>Professional experience:</strong></p>
+          <ul>
+            <li>Web development internship (2022-2023)</li>
+            <li>Junior web developer - Academic web development project (2023-2024)</li>
+          </ul>
+          <p><strong>Technical skills:</strong></p>
+          <ul>
+            <li>Semantic HTML5 and W3C validation</li>
+            <li>Responsive CSS3 and accessibility (WCAG 2.1 AA)</li>
+            <li>Modern JavaScript and DOM manipulation</li>
+            <li>Tools: Git, VS Code, Lighthouse, WAVE, axe DevTools</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      &copy; 2025 - My Personal Presentation · Last updated:
+      <time datetime="2025-12-01">December 1, 2025</time>
+      · <a href="https://github.com/" rel="noopener">GitHub</a>
+      · <a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>

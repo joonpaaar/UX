@@ -2,21 +2,39 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Presentación Personal</title>
+  <link rel="alternate" hreflang="es" href="index.html">
+  <link rel="alternate" hreflang="en" href="index-en.html">
   <link rel="stylesheet" href="Estructura.css">
 </head>
 <body>
 
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
   <header>
     <h1>¡BIENVENIDO A MI PÁGINA PERSONAL!</h1>
   </header>
 
-  <nav>
+  <nav aria-label="Navegación principal">
+    <a href="index.html" aria-current="page">INICIO</a>
     <a href="SobreMi.html">SOBRE MÍ</a>
     <a href="MiCiudad.html">MI CIUDAD</a>
+    <a href="Ayuda.html">AYUDA</a>
+    <a href="MapaSitio.html">MAPA DEL SITIO</a>
+    <a href="Contacto.html">CONTACTO</a>
+    <form role="search" action="Buscar.html" method="get" class="buscador">
+      <label for="q">Buscar</label>
+      <input id="q" name="q" type="search" required>
+      <button type="submit">Buscar</button>
+    </form>
+    <span class="idiomas" aria-label="Selector de idioma">
+      <a href="index.html" hreflang="es" lang="es">ES</a>
+      <span aria-hidden="true">|</span>
+      <a href="index-en.html" hreflang="en" lang="en">EN</a>
+    </span>
   </nav>
 
-  <main>
+  <main id="contenido" tabindex="-1">
     <h2>Hola, soy Jon!!</h2>
 
     <div class="bloque">
@@ -29,7 +47,12 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 - Mi Presentación Personal</p>
+    <p>
+      &copy; 2025 - Mi Presentación Personal · Última actualización:
+      <time datetime="2025-12-01">1 de diciembre de 2025</time>
+      · <a href="https://github.com/" rel="noopener">GitHub</a>
+      · <a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a>
+    </p>
   </footer>
 
 </body>
