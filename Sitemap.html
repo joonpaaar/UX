@@ -12,23 +12,31 @@
   <header>
     <h1>SITEMAP</h1>
   </header>
-  <nav aria-label="Main navigation">
-    <a href="index-en.html">HOME</a>
-    <a href="AboutMe.html">ABOUT ME</a>
-    <a href="MyCity.html">MY CITY</a>
-    <a href="Help.html">HELP</a>
-    <a href="Sitemap.html" aria-current="page">SITEMAP</a>
-    <a href="Contact.html">CONTACT</a>
-    <form role="search" action="Search.html" method="get" class="buscador">
-      <label for="q">Search</label>
-      <input id="q" name="q" type="search" required>
-      <button type="submit">Search</button>
-    </form>
-    <span class="idiomas" aria-label="Language selector">
-      <a href="MapaSitio.html" hreflang="es" lang="es">ES</a>
-      <span aria-hidden="true">|</span>
-      <a href="Sitemap.html" hreflang="en" lang="en">EN</a>
-    </span>
+  <nav aria-label="Main navigation" class="nav-container">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="nav-menu">
+      <a href="index-en.html">HOME</a>
+      <a href="AboutMe.html">ABOUT ME</a>
+      <a href="MyCity.html">MY CITY</a>
+      <a href="Help.html">HELP</a>
+      <a href="Sitemap.html" aria-current="page">SITEMAP</a>
+      <a href="Contact.html">CONTACT</a>
+      <form role="search" action="Search.html" method="get" class="buscador">
+        <label for="q">Search</label>
+        <input id="q" name="q" type="search" required>
+        <button type="submit">Search</button>
+      </form>
+      <span class="idiomas" aria-label="Language selector">
+        <a href="MapaSitio.html" hreflang="es" lang="es">ES</a>
+        <span aria-hidden="true">|</span>
+        <a href="Sitemap.html" hreflang="en" lang="en">EN</a>
+      </span>
+    </div>
   </nav>
   <main id="content" tabindex="-1">
     <nav class="breadcrumb" aria-label="Breadcrumb">

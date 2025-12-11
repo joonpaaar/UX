@@ -12,23 +12,31 @@
   <header>
     <h1>MAPA DEL SITIO</h1>
   </header>
-  <nav aria-label="Navegación principal">
-    <a href="index.html">INICIO</a>
-    <a href="SobreMi.html">SOBRE MÍ</a>
-    <a href="MiCiudad.html">MI CIUDAD</a>
-    <a href="Ayuda.html">AYUDA</a>
-    <a href="MapaSitio.html" aria-current="page">MAPA DEL SITIO</a>
-    <a href="Contacto.html">CONTACTO</a>
-    <form role="search" action="Buscar.html" method="get" class="buscador">
-      <label for="q">Buscar</label>
-      <input id="q" name="q" type="search" required>
-      <button type="submit">Buscar</button>
-    </form>
-    <span class="idiomas" aria-label="Selector de idioma">
-      <a href="MapaSitio.html" hreflang="es" lang="es">ES</a>
-      <span aria-hidden="true">|</span>
-      <a href="Sitemap.html" hreflang="en" lang="en">EN</a>
-    </span>
+  <nav aria-label="Navegación principal" class="nav-container">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Alternar menú">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="nav-menu">
+      <a href="index.html">INICIO</a>
+      <a href="SobreMi.html">SOBRE MÍ</a>
+      <a href="MiCiudad.html">MI CIUDAD</a>
+      <a href="Ayuda.html">AYUDA</a>
+      <a href="MapaSitio.html" aria-current="page">MAPA DEL SITIO</a>
+      <a href="Contacto.html">CONTACTO</a>
+      <form role="search" action="Buscar.html" method="get" class="buscador">
+        <label for="q">Buscar</label>
+        <input id="q" name="q" type="search" required>
+        <button type="submit">Buscar</button>
+      </form>
+      <span class="idiomas" aria-label="Selector de idioma">
+        <a href="MapaSitio.html" hreflang="es" lang="es">ES</a>
+        <span aria-hidden="true">|</span>
+        <a href="Sitemap.html" hreflang="en" lang="en">EN</a>
+      </span>
+    </div>
   </nav>
   <main id="contenido" tabindex="-1">
     <nav class="breadcrumb" aria-label="Breadcrumb">
